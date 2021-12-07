@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Trey Morris" description="WDV351 Web Application Components Final Project">
+    <title>Morris Fishing - Products</title>
+    <link rel="stylesheet" href="css/mainStyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+    </script>
+
+    <style>
+
+        body  {
+            background-color: #E3F7D4;
+        }
+
+        .jumbotron  {
+            background-image:url(images/desktop_images/tackleBox.jpg);
+            background-size: cover;
+            height:1000px;
+            display: flex;
+        }
+
+        #products  {
+            width:80%;
+            height:80%;
+            margin: auto;
+        }
+
+        .flex-container {
+            display:flex;
+            flex-flow: row wrap;
+            padding: 2.5%;
+            justify-content: space-around;
+            margin: auto;       
+        }
+
+        #card  {
+            width:300px;
+            text-align: center;
+        }
+
+        .fa  {
+            padding:.5%;
+            font-size: 24px;
+        }
+
+        .fa:link  {
+            text-decoration: none; ;
+        }
+        
+        @media screen and (max-width: 900px)  {
+            .jumbotron  {
+                background-image:url(images/desktop_images/tackleBox.jpg);
+                background-size: cover;
+                height:500px;
+                display: flex;
+            }
+        }
+
+        @media screen and (max-width: 475px)  {
+            .jumbotron  {
+                background-image:url(images/desktop_images/tackleBox.jpg);
+                background-size: cover;
+                height:300px;
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" style="color:#0247FE"><img class="logo" src="images/theLogo.png" alt="Morris Fishing Logo">Morris Fishing</a>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4"></h1>
+          <p class="lead"></p>
+        </div>
+    </div>
+
+    <div id="products" class=".container-fluid">
+
+        <h1 style="color:#0247FE; text-align: center; padding:2.5%;">Products</h2>
+            
+            <div class="flex-container">
+
+                <!--Physical Products-->
+                <div id="card">
+                    <img id="productImage" class="img-fluid" src="images/products/purpleHellgramite.jpg" alt="Purple Hellgramite soft plastic bait">
+                    <h5>Purple Hellgramite 5 pack <br> $10</h5>
+                    <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="KPY62V2WUCMAY">
+                        <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+                        
+                        
+                </div>
+
+                <div id="card">
+                    <img id="productImage" class="img-fluid" src="images/products/octopus4.jpg" alt="Octopus soft plastic bait">
+                    <h5>Octopus 3 pack <br> $15</h5>
+                    <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="BZAWSDZHLPZX2">
+                        <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>                          
+                </div>
+
+                <div id="card">
+                    <img id="productImage" class="img-fluid" src="images/products/hellgramite.jpg" alt="Hellgramite soft plastic bait">
+                    <h5>Hellgramite 5 pack <br> $10</h5>
+                    <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="3B26TQNQUHC4Q">
+                        <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>                            
+                </div>
+
+            </div>
+            
+            <div class="flex-container">
+
+                <div id="card">
+                    <img id="productImage" class="img-fluid" src="images/products/watermelonRedFlake.jpg" alt="Hellgramite soft plastic bait">
+                    <h5>Watermelon Hellgramite 5 pack <br> $10</h5>
+                    <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="9BPVPTUTUWFP6">
+                        <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>                            
+                </div>
+
+                <div id="card">
+                    <img id="productImage" class="img-fluid" src="images/products/3pack.jpg" alt="Worm soft plastic bait">
+                    <h5>Artificial Worm 3-pack <br> $12</h5>
+                    <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="EXMZHRVFVB66U">
+                        <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+                </div>
+
+                <div id="card">
+                    <img id="productImage" class="img-fluid" src="images/products/crab.jpg" alt="Crab soft plastic bait">
+                    <h5> Artificial Crab 3-pack <br> $10</h5>
+                    <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="WBNSDL32V9KFG">
+                        <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+                        
+                </div>
+
+            </div>
+
+            <div class="flex-container">
+
+                <div id="card">
+                    <img id="productImage" class="img-fluid" src="images/products/green.jpg" alt="Sandworm soft plastic bait">
+                    <h5>UV Green Sandworm 3.3<br> $10</h5>
+                    <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="K9QTXYY3334N6">
+                        <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>                
+                </div>
+
+                <div id="card">
+                    <img id="productImage" class="img-fluid" src="images/products/minnow.jpg" alt="Pink minnow soft plastic bait">
+                    <h5>Pink Minnow 3-pack<br> $12</h5>
+                    <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="A95QEBS7HZAKW">
+                        <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>                      
+                </div>
+
+                <div id="card">
+                    <img id="productImage" class="img-fluid" src="images/products/lure.jpg" alt="Fishing lure">
+                    <h5>MF Custom Lure<br> $20</h5>
+                    <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="35F27HG9WE27E">
+                        <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form> 
+                </div>
+
+            </div>
+
+            <div class="flex-container">
+
+                <div id="card">
+                    <img id="productImage" class="img-fluid" src="images/products/shrimp.jpg" alt="Shrimp soft plastic bait">
+                    <h5>Shrimp 3-pack<br> $10</h5>
+                    <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="TEAJB3APPXKTJ">
+                        <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>             
+                </div>
+                
+                <!--Digital Products-->
+                <div id="card">
+                    <img id="productImage" class="img-fluid" src="digitalProducts/fishChart.png" alt="Saltwater Fish Identification Chart">
+                    <h5>Saltwater Fish Identification PDF & Image<br> $5</h5> 
+                    <div id="smart-button-container">
+                        <div style="text-align: center;">
+                          <div id="paypal-button-container"></div>
+                        </div>
+                      </div>
+                    <script src="https://www.paypal.com/sdk/js?client-id=AfXxhzpwjttBdRkH4Y2_MYvqGfHgYmeqWo4NbGeLuVnortBnk9eNhEZkzquMhXVGvGibe-gu5fhtutJ-&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+                    <script>
+                      function initPayPalButton() {
+                        paypal.Buttons({
+                          style: {
+                            shape: 'pill',
+                            color: 'gold',
+                            layout: 'horizontal',
+                            label: 'paypal',
+                            
+                          },
+                  
+                          createOrder: function(data, actions) {
+                            return actions.order.create({
+                              purchase_units: [{"description":"Saltwater Fish Identification Chart PDF & Image","amount":{"currency_code":"USD","value":5.3,"breakdown":{"item_total":{"currency_code":"USD","value":5},"shipping":{"currency_code":"USD","value":0},"tax_total":{"currency_code":"USD","value":0.3}}}}]
+                            });
+                          },
+                  
+                          onApprove: function(data, actions) {
+                            return actions.order.capture().then(function(orderData) {
+                              
+                              // Full available details
+                              console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+                  
+                              // Show a success message within this page, e.g.
+                              const element = document.getElementById('paypal-button-container');
+                              element.innerHTML = '';
+                              element.innerHTML = '<h3>Thank you for your payment!</h3>';
+                  
+                              // Or go to another URL:  actions.redirect('thank_you.html');
+                              window.location.href = "deliveryPage.html";
+                              
+                            });
+                          },
+
+                          onCancel: function (data) {
+                          // Show a cancel page, or return to cart
+                          window.location.href = "cancelPage.html";
+                          },
+                  
+                          onError: function(err) {
+                            console.log(err);
+                          }
+                        }).render('#paypal-button-container');
+                      }
+                      initPayPalButton();
+                    </script>  
+                </div>
+
+                <div id="card">
+                    
+                </div>
+
+            </div>
+
+    </div>
+
+    <footer id="sticky-footer" class="flex-shrink-0 py-4">
+        <div class="container text-center">
+            <h4>Morris Fishing</h4>
+            <h5>(555)-555-5555</h5>
+            <h5>123 Main Street</h5>
+            <h5>St. Augustine,FL</h5>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </div>
+    </footer>
+    
+</body>
+</html>

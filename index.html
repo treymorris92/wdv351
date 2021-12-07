@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Trey Morris" description="WDV351 Web Application Components Final Project">
+    <title>Morris Fishing - Home</title>
+    <link rel="stylesheet" href="css/mainStyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+    </script>
+
+    <style>
+
+        body  {
+            flex: 1 0 auto;
+        }
+
+        .jumbotron  {
+            background-image:url(css/jumbotron.jpg);
+            background-size: cover;
+            height:1000px;
+            display: flex;
+        }
+
+        #belowJumbotron  {
+            background-color: #0247FE;
+            text-align: center;
+            padding:2.5%;
+        }
+
+        #triangleDown {
+            width: 0;
+            margin: auto;
+            height: 0;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-top: 100px solid #0247FE;
+            padding-bottom:1%;
+        }
+
+        .rectangle {
+            height: 10px;
+            width: 100px;
+            margin: auto;
+            background-color: #0247FE;
+        }
+
+        #midSection  {
+            background-color: #E3F7D4;
+            text-align: center;
+            padding-bottom: 2.5%;
+        }
+
+        #fish  {
+            border-radius: 50%;
+            padding:2.5%;
+        }
+
+        #featuredProducts  {
+            background-color: #347b98;
+            text-align: center;
+            padding:2.5%;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 2.5%;
+            justify-content: space-around;        
+        }
+
+        #card  {
+            width:300px;
+            text-align: center;
+        }
+
+        form  {
+            padding:5%;
+        }
+
+        #productImage  {
+            width:80%;
+            height:80%;
+        }
+
+        #aboveFooter  {
+            background-color: #091534;
+            text-align: center;
+            padding:2.5%;
+        }
+
+        #kid  {
+            border-radius: 50%;
+            padding:2.5%;
+        }
+
+        .fa  {
+            padding:.5%;
+            font-size: 24px;
+        }
+
+        .fa:link  {
+            text-decoration: none; ;
+        }
+
+        @media screen and (max-width: 1600px)  {
+            .jumbotron  {
+                background-image:url(css/jumbotron.jpg);
+                background-size: cover;
+                height:750px;
+                display: flex;
+            }
+        }
+
+        @media screen and (max-width: 1330px)  {
+            #card  {
+                padding-top: 5%;
+                padding-bottom: 5%;
+            }
+        }
+
+        @media screen and (max-width: 1200px)  {
+            .jumbotron  {
+                background-image:url(css/jumbotron.jpg);
+                background-size: cover;
+                height:625px;
+                display: flex;
+            }
+        }
+
+        @media screen and (max-width: 900px)  {
+            .jumbotron  {
+                background-image:url(css/jumbotron.jpg);
+                background-size: cover;
+                height:500px;
+                display: flex;
+            }
+        }
+
+        @media screen and (max-width: 750px)  {
+            .jumbotron  {
+                background-image:url(css/anglerMobile.jpg);
+                background-size: cover;
+                height:500px;
+                display: flex;
+            }
+        }
+
+        @media screen and (max-width: 665px)  {
+            #card  {
+                padding-top: 15%;
+                padding-bottom: 15%;
+            }
+        }
+
+        @media screen and (max-width: 600px)  {
+            .jumbotron  {
+                background-image:url(css/anglerMobile.jpg);
+                background-size: cover;
+                height:400px;
+                display: flex;
+            }
+        }
+
+        @media screen and (max-width: 300px)  {
+            .jumbotron  {
+                background-image:url(css/anglerMobile.jpg);
+                background-size: cover;
+                height:300px;
+                display: flex;
+            }
+            #card h5  {
+                font-size:16px;
+            }
+        }
+
+    </style>
+    
+</head>
+<body class="d-flex flex-column">
+    
+    <div class="topnav" id="myTopnav">
+        
+        <a href="index.html" style="color:#0247FE"><img class="logo" src="images/theLogo.png" alt="Morris Fishing Logo">Morris Fishing</a>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        
+    </div>
+
+    <div class=".container">
+
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4"></h1>
+              <p class="lead"></p>
+            </div>
+        </div>
+
+        <div id="belowJumbotron" class=".container-fluid">
+
+            <h2 style="color:white;">More Catches Per Bait - Save Money And The Environment</h2>
+
+            <h1 style="color:#66B032">Unique Best Selling Soft Plastics</h1>
+
+        </div>
+
+        <div id="midSection" class=".container-fluid">
+
+            <div id="triangleDown"></div><br>
+
+            <h3>Toxin-Free</h3><br><br>
+
+            <div class="rectangle"></div><br><br>
+
+            <h3>Safe for fish</h3><br><br>
+
+            <div class="rectangle"></div><br><br>
+
+            <h3>Environmentally Friendly</h3>
+
+            <img id="fish" class="img-fluid" src="images/desktop_images/fish.jpg" alt="Picture of a fish">
+                    
+        </div>
+
+        <div id="featuredProducts" class=".container-fluid">
+
+            <h2 style="color:#66B032">Featured Products</h2>
+                
+                <div class="flex-container">
+
+                    <div id="card">
+                        <img id="productImage" class="img-fluid" src="images/products/purpleHellgramite.jpg" alt="Purple Hellgramite soft plastic bait">
+                        <h5>Purple Hellgramite 5 pack <br> $10</h5>
+                        <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" >
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+                            <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                            <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                        </form>
+                            
+                    </div>
+
+                    <div id="card">
+                        <img id="productImage" class="img-fluid" src="images/products/octopus4.jpg" alt="Octopus soft plastic bait">
+                        <h5>Octopus 3 pack <br> $15</h5>
+                        <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="BZAWSDZHLPZX2">
+                            <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                            <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                        </form>                          
+                    </div>
+
+                    <div id="card">
+                        <img id="productImage" class="img-fluid" src="images/products/hellgramite.jpg" alt="Hellgramite soft plastic bait">
+                        <h5>Hellgramite 5 pack <br> $10</h5>
+                        <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="3B26TQNQUHC4Q">
+                            <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                            <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                        </form>                            
+                    </div>
+
+                    <div id="card">
+                        <img id="productImage" class="img-fluid" src="images/products/watermelonRedFlake.jpg" alt="Hellgramite soft plastic bait">
+                        <h5>Watermelon Hellgramite 5 pack <br> $10</h5>
+                        <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="9BPVPTUTUWFP6">
+                            <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                            <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                        </form>                            
+                    </div>
+
+                </div>
+            
+        </div>
+
+        <div id="aboveFooter" class=".container-fluid">
+
+            <h1 style="color:#E3F7D4">Preserving Fisheries For Future Generations</h1>
+
+            <img id="kid" class="img-fluid" src="images/desktop_images/kid.jpg" alt="Kid looking over dock at a group of fish">
+
+        </div>
+
+    </div>
+
+    <footer id="sticky-footer" class="flex-shrink-0 py-4">
+        <div class="container text-center">
+            <h4>Morris Fishing</h4>
+            <h5>(555)-555-5555</h5>
+            <h5>123 Main Street</h5>
+            <h5>St. Augustine,FL</h5>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
